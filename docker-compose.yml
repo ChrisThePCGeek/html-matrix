@@ -1,0 +1,8 @@
+version: '2.4'
+services:
+  nginx: 
+    image: nginx:1.19-alpine
+    volumes:
+      - ./:/usr/share/nginx/html
+    ports:
+      - "8080:80"
